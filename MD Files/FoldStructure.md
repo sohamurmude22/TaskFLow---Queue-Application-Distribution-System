@@ -68,3 +68,17 @@ TaskFlow/
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
+
+Folder	Purpose
+config	        Database and Redis connection configuration
+controllers	    Handle incoming API requests and send responses
+models	        Define MongoDB schemas using Mongoose
+routes	        Define API endpoints
+middleware	    Authentication, authorization and request checks
+services	    Contain the main business logic
+utils	        Store reusable helper functions
+queues	        Configure and manage BullMQ queues
+workers	        Process background jobs
+jobs	        Define job-related processing functions, if needed
+validators	    Validate API request data
+logs	        Store application or job-processing logs, if needed

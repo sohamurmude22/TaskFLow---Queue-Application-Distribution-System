@@ -1,12 +1,11 @@
-const express = require("express");
-
+const express = require('express');
 const router = express.Router();
 
-router.get("/health", (req, res) => {
-    res.status(200).json({
-        success: true,
-        message: "TaskFlow API is running"
-    });
+router.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'TaskFlow API is working',
+  });
 });
 
 module.exports = router;
